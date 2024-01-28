@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "880540219709",
+    "project_id": "production-app-623eb",
+    "storage_bucket": "production-app-623eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:880540219709:android:9a5faf2ecaa32c6c65ed54",
+        "android_client_info": {
+          "package_name": "com.example.footwear_admin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwTlh-PelVKLV4T_YGtaecnvBG18Z7Zqc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -5,9 +5,9 @@ import 'package:footwear_admin/firebase_options.dart';
 import 'package:footwear_admin/pages/home_page.dart';
 import 'package:get/get.dart';
 
-void main() {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  Firebase.initializeApp(options: firebaseOptions);
+  await Firebase.initializeApp(options: firebaseOptions);
   // ///////////// Registering my controller /////////////
   Get.put(HomeController());
   runApp(const MyApp());

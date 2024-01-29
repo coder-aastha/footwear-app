@@ -1,8 +1,15 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:footwear_admin/controller/home_controller.dart';
+import 'package:footwear_admin/firebase_options.dart';
 import 'package:footwear_admin/pages/home_page.dart';
 import 'package:get/get.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  Firebase.initializeApp(options: firebaseOptions);
+  // ///////////// Registering my controller /////////////
+  Get.put(HomeController());
   runApp(const MyApp());
 }
 

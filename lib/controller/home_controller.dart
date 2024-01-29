@@ -1,18 +1,20 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get/get.dart';
 
 class HomeController extends GetxController{
 
-  String test = 'test string';
+  FirebaseFirestore firestore = FirebaseFirestore.instance;
+  late CollectionReference productCollection;
 
   @override
   void onInit() {
-    // TODO: implement onInit
+    productCollection = firestore.collection('products');
     super.onInit();
   }
 
-  testMethod(){
-    print(test);
-  }
+  addProduct(){
+    DocumentReference doc = productCollection.doc();
 
+  }
 
 }
